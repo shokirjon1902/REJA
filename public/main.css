@@ -26,6 +26,7 @@
   background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .main_frame .midd_frame {
@@ -42,7 +43,7 @@
   position: relative;
   width: 108px;
   height: 1315px;
-  background-color: white;
+  /* background-color: white; */
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -140,11 +141,22 @@
   margin-right: 5px;
 }
 
-.marginer {
+.marginer_1 {
   position: relative;
   width: 220px;
   height: 0px;
   margin-left: 40px;
+  margin-bottom: 25px;
+  margin-top: 39px;
+
+  border: 1.5px solid #f0f0f6;
+}
+
+.marginer {
+  position: relative;
+  width: 220px;
+  height: 0px;
+  /* margin-left: 40px; */
   margin-bottom: 25px;
   margin-top: 39px;
 
@@ -157,7 +169,179 @@
   height: 126px;
   margin-left: 44px;
 
-  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aquamarine; */
+}
+
+.left_2_1 {
+  width: 220px;
+  height: 24px;
+  margin: 5px 0;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left_2_1 .age {
+  /* Age */
+  width: 221px;
+  height: 25px;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.left_2_1 .age .rectangle {
+  /* Rectangle 2 */
+  width: 46.21px;
+  height: 24px;
+}
+
+.left_2_1 .age .rectangle .age_text {
+  /* Age: */
+  width: 33.15px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+  background: orange;
+}
+
+.age .age_number {
+  /* 24 */
+  width: 19.09px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.age .r_rectangle {
+  /* Rectangle 3 */
+  width: 89px;
+  height: 24px;
+  background: orange;
+}
+
+.age .r_text {
+  /* Residence: */
+  width: 78px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.age .r_number {
+  /* BD */
+  width: 21px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.age .f_rectangle {
+  /* Rectangle 4 */
+  width: 85px;
+  height: 24px;
+  background: orange;
+}
+
+.age .f_text {
+  /* Freelance: */
+  width: 74px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.age .f_number {
+  /* Available */
+  width: 65px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: right;
+  text-transform: capitalize;
+}
+
+.age .ad_rectangle {
+  /* Rectangle 5 */
+  width: 75px;
+  height: 24px;
+
+  background: orange;
+}
+
+.age .ad_text {
+  /* Address: */
+  width: 63px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.age .ad_number {
+  /* Dhaka,Bangladesh */
+  width: 132px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .left_3 {
@@ -165,8 +349,114 @@
   width: 220px;
   height: 153px;
   margin-top: 25px;
-  margin-left: 45px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+}
+
+.left_3 .languages {
+  /* Languages */
+  width: 220px;
+  height: 153px;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.languages h2 {
+  /* Languages */
+  width: 95px;
+  height: 22px;
+
+  font-family: "Inter";
+  font-style: Medium;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 123.6%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.languages .bangla {
+  width: 217px;
+  height: 24px;
+
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.languages .l_name {
+  /* Bangla */
+  width: 49px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.languages .l_percent {
+  /* 100% */
+  width: 38px;
+  height: 24px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.languages .l_rectangle {
+  /* Rectangle 6 */
+  width: 220px;
+  height: 4px;
+}
+
+.languages .l_rectangle_2 {
+  /* Rectangle 7 */
+  width: 217px;
+  height: 2px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border: solid 1px orange;
+  border-radius: 5px;
+}
+
+.languages .l_rectangle_2 .percent_100 {
+  /* Rectangle 7 */
+  width: 217px;
+  height: 2px;
+  border-radius: 30px;
+  background-color: orange;
+}
+
+.languages .l_rectangle_2 .percent_80 {
+  /* Rectangle 7 */
+  width: 208px;
+  height: 2px;
+  border-radius: 30px;
+  background-color: orange;
+}
+
+.languages .l_rectangle_2 .percent_60 {
+  /* Rectangle 7 */
+  width: 190px;
+  height: 2px;
+  border-radius: 30px;
+  background-color: orange;
 }
 
 .left_4 {
@@ -174,15 +464,11 @@
   width: 220px;
   height: 252px;
   margin-top: 25px;
-  margin-left: 45px;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
 }
 
 .left_5 {
   position: relative;
   width: 186px;
   height: 148px;
-  margin-top: 25px;
-  margin-left: 45px;
-  background-color: aquamarine;
 }
