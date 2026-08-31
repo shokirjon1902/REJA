@@ -1,0 +1,24 @@
+{
+  "type": "Compass Connections",
+  "version": {
+    "$numberInt": "1"
+  },
+  "connections": [
+    {
+      "id": "a63e277f-9ce1-467f-ade6-0dd404153dce",
+      "lastUsed": {
+        "$date": {
+          "$numberLong": "1788176425528"
+        }
+      },
+      "favorite": {
+        "name": "shokirjon"
+      },
+      "savedConnectionType": "favorite",
+      "connectionOptions": {
+        "connectionString": "mongodb+srv://shokirjontojiboyev155_db_user@cluster0.hfshhup.mongodb.net/",
+        "oidc": {}
+      }
+    }
+  ]
+}
