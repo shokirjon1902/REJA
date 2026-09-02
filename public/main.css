@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* background-color: aqua; */
+  background-color: #e4e6eb;
 }
 
 .main_frame {
@@ -16,7 +16,8 @@
   display: flex;
   flex-direction: row;
   margin-top: 2px;
-  background: #f7f6b9;
+  /* background: #f7f6b9; */
+  background-color: #f0f0f6;
 }
 
 .main_frame .left_frame {
@@ -476,10 +477,94 @@
   /* Main menu */
   width: 971px;
   height: 463.09px;
+  display: flex;
+  flex-direction: row;
+  /* margin: 3px; */
+  margin-top: -26px;
+  background: white;
 
-  margin: 3px;
+  /* background: #767676; */
+}
 
-  background: #767676;
+.midd_top .top_left {
+  /* Doctor neurologists in OHSU Hospital */
+  margin-left: 56px;
+  background: white;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.midd_top .doctor {
+  /* Doctor neurologists in OHSU Hospital */
+  width: 499.51px;
+  height: 116.74px;
+  margin-top: 99px;
+
+  font-family: "Inter";
+  font-style: Bold;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 123.6%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.midd_top .lorem p {
+  width: 424.44px;
+  height: 85.61px;
+
+  font-family: "Inter";
+  font-style: Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.midd_top .top_right {
+  /* Your Image 1 */
+  width: 326.06px;
+  height: 446.63px;
+}
+
+.midd_frame .rasm_1 {
+  position: absolute;
+  margin: 419px 870px 20px 85px;
+}
+
+.midd_frame .rasm_2 {
+  position: absolute;
+  margin-top: 37px;
+  margin-left: 36px;
+}
+
+.midd_frame .rasm_3 {
+  position: absolute;
+  margin: 378px;
+}
+
+.midd_frame .rasm_4 {
+  position: absolute;
+  margin: 59px 538px 379px 416px;
+}
+
+.midd_frame .rasm_5 {
+  position: absolute;
+  margin: 76px 57px 357px 852px;
+}
+
+.midd_frame .rasm_6 {
+  position: absolute;
+  margin: 424px 47px 15px 890px;
+}
+
+.midd_frame .rasm_7 {
+  position: absolute;
+  margin: 330px 579px 102px 280px;
 }
 
 .midd_frame .midd_bott {
@@ -487,5 +572,5 @@
   width: 970px;
   height: 653px;
   margin-top: 148px;
-  background: #767676;
+  /* background: #767676; */
 }
