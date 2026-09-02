@@ -26,7 +26,6 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .main_frame .midd_frame {
@@ -471,4 +470,22 @@
   position: relative;
   width: 186px;
   height: 148px;
+}
+
+.midd_frame .midd_top {
+  /* Main menu */
+  width: 971px;
+  height: 463.09px;
+
+  margin: 3px;
+
+  background: #767676;
+}
+
+.midd_frame .midd_bott {
+  /* My Services */
+  width: 970px;
+  height: 653px;
+  margin-top: 148px;
+  background: #767676;
 }
