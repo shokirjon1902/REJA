@@ -15,6 +15,7 @@ fs.readFile("database/user.json", "utf8", (err, data) => {
 //MongoDB choqirish
 
 const db = require("./server").db();
+const mongodb = require("mongodb");
 
 // 1: Kirish code
 app.use(express.static("public"));
@@ -36,6 +37,26 @@ app.post("/create-item", (req, res) => {
     console.log(data.ops);
     res.json(data.ops[0]);
   });
+});
+
+app.post("/delete-item", (req, res) => {
+  const id = req.body.id;
+
+  console.log("OCHIRILAYOTGAN ID:", id);
+
+  db.collection("plans").deleteOne(
+    { _id: new mongodb.ObjectId(id) },
+    (err, data) => {
+      if (err) {
+        console.log("DELETE XATOSI:", err);
+        return res.status(500).json({ state: "error" });
+      }
+
+      console.log("DELETE NATIJA:", data);
+
+      res.json({ state: "success" });
+    },
+  );
 });
 
 app.get("/author", (req, res) => {

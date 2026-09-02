@@ -1,3 +1,7 @@
+// const e = require("express");
+
+// const response = require("../app");
+
 console.log("Frontend JS ishgsa tushdi");
 
 function itemTemplate(item) {
@@ -26,6 +30,34 @@ document.getElementById("create-form").addEventListener("submit", function (e) {
       createField.focus();
     })
     .catch((err) => {
-      console.log("Iltimos aytadan xarakat qiling !!!");
+      console.log("Iltimos qaytadan xarakat qiling !!!");
     });
 });
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("delete-me")) {
+    if (confirm("aniq uchirmoqchimisiz?")) {
+      const id = e.target.getAttribute("data-id");
+
+      console.log("Frontend ID:", id);
+
+      axios
+        .post("/delete-item", { id: id })
+        .then((response) => {
+          console.log("Server javobi:", response.data);
+
+          if (response.data.state === "success") {
+            e.target.parentElement.parentElement.remove();
+          }
+        })
+        .catch((err) => {
+          console.log("Axios xatosi:", err);
+        });
+    }
+  }
+});
+
+// edit oper
+if (e.target.classList.contains("edit-me")) {
+  alert("siz edit tugmasini bosdingiz");
+}
