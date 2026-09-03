@@ -6,7 +6,7 @@ console.log("Frontend JS ishgsa tushdi");
 
 function itemTemplate(item) {
   return ` <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
-          <span class="items-text"><${item.reja}</span>
+          <span class="items-text">${item.reja}</span>
           <div>
             <button data-id="${item._id}" class="edit-me btn btn-secondary btn-sm mr-1">
               o'zgartirish
