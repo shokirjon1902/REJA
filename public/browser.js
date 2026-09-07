@@ -1,8 +1,12 @@
 // const e = require("express");
 
+// const { response } = require("../app");
+
+// const { response } = require("../app");
+
 // const response = require("../app");
 
-console.log("Frontend JS ishgsa tushdi");
+// console.log("Frontend JS ishgsa tushdi");
 
 function itemTemplate(item) {
   return ` <li class="list-group-item list-group-item-info d-flex align-items-center justify-content-between">
@@ -55,9 +59,37 @@ document.addEventListener("click", function (e) {
         });
     }
   }
+
+  // edit oper
+  if (e.target.classList.contains("edit-me")) {
+    let userInput = prompt(
+      "O'zgartirish kriting",
+      e.target.parentElement.parentElement.querySelector(".items-text")
+        .innerHTML,
+    );
+
+    if (userInput) {
+      axios
+        .post("/edit-item", {
+          id: e.target.getAttribute("data-id"),
+          new_input: userInput,
+        })
+        .then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.querySelector(
+            ".item-text",
+          ).innerHTML = userInput;
+        })
+        .catch((err) => {
+          console.log("Iltimos qaytadan xarakat qiling !!!");
+        });
+    }
+  }
 });
 
-// edit oper
-if (e.target.classList.contains("edit-me")) {
-  alert("siz edit tugmasini bosdingiz");
-}
+document.getElementById("clean-all").addEventListener("click", function () {
+  axios.post("/delete-all", { delete_all: true }).then((response) => {
+    alert(response.data.state);
+    document.location.reload();
+  });
+});
