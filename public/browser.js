@@ -77,7 +77,7 @@ document.addEventListener("click", function (e) {
         .then((response) => {
           console.log(response.data);
           e.target.parentElement.parentElement.querySelector(
-            ".item-text",
+            ".items-text",
           ).innerHTML = userInput;
         })
         .catch((err) => {
